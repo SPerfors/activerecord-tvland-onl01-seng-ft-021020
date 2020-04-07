@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   
   def actors_list 
     list = []
-    array_of_actors = self.shows.map {|actors| "#{actors.first_name} #{actors.last_name}"} 
+    array_of_actors = self.actors.map {|actors| "#{actors.first_name} #{actors.last_name}"} 
     list << array_of_actors
     list 
   end
