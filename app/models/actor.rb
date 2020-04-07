@@ -3,7 +3,7 @@ class Actor < ActiveRecord::Base
   has_many :shows, through: :characters
   
   def full_name
-    name = {first_name.last_name.all 
+    name = "#{self.first_name}.last_name.all 
   end
   
   def list_roles 
