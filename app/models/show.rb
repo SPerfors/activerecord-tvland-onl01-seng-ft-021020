@@ -4,7 +4,8 @@ class Show < ActiveRecord::Base
   
   def actors_list 
     show = []
-    
+    name = "#{self.first_name} #{self.last_name}" 
+    show << name 
     
   
 end
