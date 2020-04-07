@@ -1,4 +1,4 @@
-class CreateThreeShowsColumns < ActiveRecord::Migrate[5.2]
+class CreateThreeShowsColumns < ActiveRecord::Migration[5.2]
   def change 
     add_column :shows, :day, :string 
     add_column :shows, :genre, :string 
